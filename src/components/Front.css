@@ -1,0 +1,120 @@
+
+.front_ctr {
+  height: 40rem;
+  /* border: 1px solid red; */
+  background-image: linear-gradient(to right, rgb(0, 0, 0), transparent);
+  position: relative;
+  overflow: hidden;
+}
+.front_ctr .img {
+  width: 100%;
+  object-fit: fill;
+  mix-blend-mode: darken;
+}
+.front_ctr .header {
+  height: 5rem;
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 98%;
+  margin-left: 1rem;
+  justify-content: space-between;
+}
+.front_ctr .header .header_lft img {
+  width: 7rem;
+}
+
+.front_ctr .header .header_rght .btn{
+    padding: .4rem .7rem;
+    font-weight: bold;
+    color: white;
+    border: none;
+    margin-left: 1rem;
+}
+.front_ctr .header .header_rght .login{
+    background-color: transparent;
+}
+.front_ctr .header .header_rght .signup{
+    background-color: red;
+}
+.content_ctr .hdr_txtbtn h1{
+    font-size: 3.5rem;
+    line-height: 0;
+    font-weight: 400;
+}
+.front_ctr .content_ctr {
+    position: absolute;
+    color: white;
+    left: 2rem;
+    bottom: calc(35rem - 23rem);
+     
+}
+.content_ctr .play{
+    background-color: rgba(255, 255, 255, 0.838);
+    border: none;
+    padding: .7rem 1.3rem;
+    font-size: 1.05rem;
+}
+.content_ctr .watchltr{
+    background-color: transparent;
+    font-size: 1.05rem;
+    color: white;
+    margin-left: 1rem;
+    padding: .7rem 1.3rem;
+    border: white 1px solid;
+}
+.content_ctr .detail .relase{
+    color: rgba(255, 255, 255, 0.616);
+    line-height: 1;
+    font-size: .9rem;
+    margin-bottom: .5rem;
+}
+.content_ctr .detail .story{
+    width: 30rem;
+    margin-top: .5rem;
+}
+
+@media(max-width:1150px){
+
+    .front_ctr {
+        height: 100%;
+        border: none;
+       margin-bottom: -1rem;
+      }
+      .front_ctr .content_ctr {
+        position: absolute;
+        bottom: calc(100% - 23rem);
+         
+    }
+}
+@media(max-width:800px){
+    .content_ctr .hdr_txtbtn h1{
+        font-size: 2.5rem;
+        line-height: 0;
+        font-weight: 400;
+    }
+    .front_ctr .content_ctr {
+        position: absolute;
+        border: 1px solid red;
+        color: white;
+        left: 2rem;
+        bottom: calc(100% - 20rem);
+         
+    }
+    .content_ctr .play{
+        background-color: rgba(255, 255, 255, 0.838);
+        border: none;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+    .content_ctr .watchltr{
+        background-color: transparent;
+        font-size: 1rem;
+        color: white;
+        margin-left: 1rem;
+        padding: .5rem 1rem;
+        border: white 1px solid;
+    }
+}

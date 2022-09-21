@@ -1,0 +1,34 @@
+.popular_img_bx {
+  width: 15.5rem !important;
+  max-height: 10rem !important;
+  position: relative;
+}
+
+.popular_img_bx img {
+  height: 10rem !important;
+  object-fit: cover;
+  width: 15.5rem !important;
+}
+.arrowP_btn {
+  position: absolute;
+  top: calc(15rem - 12rem);
+  color: white;
+}
+.m_box {
+  position: absolute;
+  width: 15.5rem !important;
+  height: 10rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.m_box p {
+  display: none;
+  margin: 0 1rem;
+}
+.m_box:hover {
+  background-color: rgba(0, 0, 0, 0.548);
+}
+.m_box:hover p {
+  display: block;
+}
